@@ -64,13 +64,13 @@ function placeNumber() {
 
     //Если пользователь ввел нечисло, выдаем ошибку
     if(obj.myCase || obj.placeNumber < 1 || obj.placeNumber > 54) {
-        return obj.result.innerHTML = "ОШИБКА! Введите число!";
+        return obj.result.innerHTML = "ОШИБКА! Введите номер места!";
     }
     
     obj.DOMInput.value = Math.floor(obj.DOMInput.value);
 
     if(obj.placeNumber <= 36) {
-        obj.placeAside = "Не боковое место";
+        obj.placeAside = "Купе";
 
         if((obj.placeNumber % 4) == 0) {
             obj.coupeNumb = obj.placeNumber / 4;
